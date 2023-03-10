@@ -1,0 +1,22 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body{
+    background-color: black;
+    color: white;
+
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    width: 100%;
+    list-style-type: lower-roman;
+    justify-content: center;
+}
+.para{
+    font-size: 20px;
+}
