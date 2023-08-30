@@ -3,21 +3,26 @@
 }
 
 .body{
-    background-color: black;
+    background-color: rgb(117, 142, 64);
     color: white;
 
+}
+ img{
+    width: 200px;
 }
 .list{
     display: flex;
     flex-direction: row;
     top: 0%;
-    left: 0%;
+    left: 45%;
     position: fixed;
-    width: 100%;
+    width: 50%;
     list-style-type: lower-roman;
-    justify-content: center;
+    justify-content: right;
+    color: aliceblue;
 }
 .para{
     font-size: 20px;
-    
+    background-color: blueviolet;
+    border-radius: 50px;
 }
