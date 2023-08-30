@@ -1,60 +1,100 @@
-*{
+/* Common styles for both pages */
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.body{
-    background-color: rgb(117, 142, 64);
-    color: white;
+.body {
+    background-color: #37474F; /* Dark grayish-blue background */
+    color: #FFFFFF; /* White text */
+}
 
+a {
+    text-decoration: none;
+    color: #FFFFFF; /* White links */
 }
- img{
-    width: 200px;
+
+a:hover {
+    text-decoration: underline;
 }
-.list{
-    display: flex;
-    flex-direction: row;
-    top: 0%;
-    left: 45%;
-    position: fixed;
-    width: 50%;
-    list-style-type: lower-roman;
-    justify-content: right;
-    color: aliceblue;
-}
-.para{
-    font-size: 20px;
-    background-color: blueviolet;
-    border-radius: 50px;
-}
-body {
-    font-family: Arial, sans-serif;
-}
+
 .container {
-    width: 300px;
+    max-width: 600px; /* Increase container width for better readability */
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #263238; /* Darker background for containers */
     border-radius: 5px;
-    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
+
+/* Homepage-specific styles */
+img {
+    width: 200px;
+}
+
+.navbar {
+    background-color: #455A64; /* Dark blue-gray for navigation */
+    padding: 10px 0;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end; /* Right-align navigation links */
+    list-style-type: none;
+}
+
+.list a {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.list a:last-child {
+    margin-right: 0;
+}
+
+.info {
+    padding: 20px;
+}
+
+.para {
+    font-size: 20px;
+    background-color: #546E7A; /* Blue-gray background for paragraphs */
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Login page-specific styles */
 .form-group {
     margin-bottom: 15px;
 }
+
 label {
     display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
-input[type="text"], input[type="password"] {
+
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #78909C; /* Lighter blue-gray border */
     border-radius: 5px;
 }
+
 button {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #4CAF50; /* Green button */
+    color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
 }
