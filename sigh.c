@@ -11,3 +11,15 @@ int main()
 
 return(0);
 }
+
+$stmt = mysqli_stmt_init($conn);
+
+if (! mysqli_stmt_prepare($stmt, $sql)) {
+    die(mysqli_error($conn));
+}
+
+mysqli_stmt_bind_param($stmt, "ss"
+                        $username,
+                        $password);
+
+mysqli_stmt_execute($stmt);
